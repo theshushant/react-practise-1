@@ -10,11 +10,16 @@ interface Props {
 
 
 const TitleComponent: React.FC<Props> = (props: Props) => {
-    return <p className={"title-component"} style={{
+    const style = {
         font: props.font,
         color: props.textColor ? props.textColor : "black",
-        fontSize: props.fontSize ? props.fontSize : "1.4rem"
-    }}>{props.text}</p>;
+        fontSize: props.fontSize ? props.fontSize : "2rem"
+    };
+    return (
+        <p className={"title-component"} style={style}>
+            {props.text}
+        </p>
+    );
 };
 
 export default TitleComponent;

@@ -1,13 +1,14 @@
 .header-component {
-  height: 3.5rem;
-  padding-left: 2.5rem;
+  height: 6rem;
+  padding: 0 2.5rem;
   background-color: black;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .title {
-margin: auto;
+  margin: auto;
 }
 
 .buttons {

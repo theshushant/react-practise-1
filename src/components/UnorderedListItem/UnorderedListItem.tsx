@@ -5,12 +5,18 @@ interface Props {
 }
 
 const UnorderedListItem: React.FC<Props> = (props: Props) => {
-    return (<div className={"items"}>
-        <li style={{
-            font: "lighter 0.9rem Aerial",
-            margin: "0.2rem 0",
-        }}>{props.text}</li>
-    </div>);
+    return (
+        //Dont use class name, if it is not required
+        <div className={"items"}>
+            <li style={{
+                //Don't use inline style until necessary, this should be moved in css file
+                font: "lighter 1.6rem Aerial",
+                margin: "1rem",
+            }}>
+                {props.text}
+            </li>
+        </div>
+    );
 };
 
 export default UnorderedListItem;

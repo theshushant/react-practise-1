@@ -2,16 +2,24 @@ import React from "react";
 
 interface Props {
     imageUrl: string,
-    alternativeTex: string,
+    alternativeText: string,
     height?: string,
     width?: string,
 
 }
 
 const ImageComponent: React.FC<Props> = (props: Props) => {
-    return (<img style={{height: props.height ? props.height : "inherit", width: props.width ? props.width : "inherit"}}
-                 src={props.imageUrl}
-                 alt={props.alternativeTex}/>);
+    const style = {
+        height: props.height ? props.height : "inherit",
+        width: props.width ? props.width : "inherit"
+    };
+    return (
+        <img
+            style={style}
+            src={props.imageUrl}
+            alt={props.alternativeText}
+        />
+    );
 };
 
 export default ImageComponent;

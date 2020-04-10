@@ -11,17 +11,36 @@ interface Props {
 }
 
 const HeaderComponent = (props: Props) => {
-    return (<div className={"header-component"}>
-        <ImageComponent imageUrl={Logo} alternativeTex={"Logo"}/>
+    //Take extra care of indentation code, as it improves readibility of code
+    return (
+        <div className={"header-component"}>
+            <ImageComponent
+                imageUrl={Logo}
+                alternativeText={"Logo"}
+            />
 
-        <div className={"title"}><TitleComponent textColor={"white"} text={"Tribute Page"}/></div>
+            <div className={"title"}>
+                <TitleComponent
+                    textColor={"white"}
+                    text={"Tribute Page"}
+                />
+            </div>
 
-        <div className={"buttons"}>
-            <CustomButton title={"Back To Home"} textColor={"white"} backgroundColor={"rgba(0, 0, 0, 0)"}/>
-            <hr style={{color:"black"}}/>
-            <CustomButton title={"DashBoard "} textColor={"white"} backgroundColor={"rgba(0, 0, 0, 0)"}/>
+            <div className={"buttons"}>
+                <CustomButton
+                    title={"Back To Home"}
+                    textColor={"white"}
+                    backgroundColor={"black"}
+                />
+                <hr/>
+                <CustomButton
+                    title={"DashBoard "}
+                    textColor={"white"}
+                    backgroundColor={"black"}
+                />
+            </div>
         </div>
-    </div>);
+    );
 };
 
 export default HeaderComponent;

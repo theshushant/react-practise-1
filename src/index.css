@@ -1,3 +1,17 @@
+/* Apply this universal selector as some elements have default padding and margin*/
+*{
+  margin: 0;
+  padding: 0;
+  /*Call me to understand this*/
+  box-sizing: border-box;
+}
+
+html {
+  /*Call me to understand this*/
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

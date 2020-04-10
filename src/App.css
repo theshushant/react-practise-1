@@ -1,4 +1,8 @@
 .App {
-    height: 100%;
-    width: 100%;
+    /*height: 100%;*/
+    /*width: 100%;*/
+
+    /*Height and width in root should be given like this and not like above*/
+    height: 100vh;
+    width: 100vw;
 }
